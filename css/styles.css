@@ -58,11 +58,33 @@ h1 {
     font-family: "gyst-variable",sans-serif;
     font-size: 25em;
 
+    background-color: transparent;
     color: var(--primary-blue);
+
+}
+
+h2 {
+    margin: 0 0 0 50px;
+    padding: 20px 10px;
+
+    font-family: "gyst-variable",sans-serif;
+    font-size: 4em;
+
+    color: var(--dark-blue);
+    background-color: transparent;
 }
 
 p {
     font-family: "myriad-bengali", sans-serif;
+}
+
+i {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+i:hover {
+    color: var(--primary-blue);
 }
 
 header {
@@ -70,9 +92,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-
     height: 100vh;
-    gap: 50px;
 }
 
 header > div {
@@ -172,22 +192,16 @@ li.dropdown {
     color: var(--primary-blue);
 }
 
+.know {
+    background-color: var(--secondary-blue);
+} 
+
 .container {
     margin-left: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .row {
     align-items: center;
-}
-.slideshow {
-    position: relative;
-}
-
-.myslides {
-    display: none;
 }
 
 .info {
@@ -204,11 +218,52 @@ li.dropdown {
     font-size: 1.2em;
 }
 
-footer {
-    background-color: var(--dark-blue);
-    height: 50vh;
+.newsletter {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-blue);
+    width: 100%;
+    height: 100px;
 }
 
+.newsletter > h1 {
+    font-size: 2em;
+    background-color: var(--secondary-blue);
+    color: var(--dark-blue);
+
+    margin: 0;
+    padding: 20px;
+}
+
+footer {
+    height: 200px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrss {
+    background: transparent;
+    text-align: center;
+}
+
+.rrss > a {
+    background: transparent;
+    display: contents;
+}
+
+.rrss > a > i {
+    background: transparent;
+    font-size: 3em;
+    color: white;
+    margin: 0 20px;
+}
+
+.rrss > img {
+    background: transparent;
+    width: 50%;
+}
 
 [class*="col"] {
     background-color: transparent;
