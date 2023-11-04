@@ -93,6 +93,8 @@ header {
     justify-content: space-between;
     flex-direction: row;
     height: 100vh;
+
+    background-image: url(../img/background.jpg);
 }
 
 header > div {
@@ -102,12 +104,20 @@ header > div {
     
     margin: 50px;
     width: 50%;
+
+    background-color: transparent;
 }
 
 header > div > p {
     text-align: center;
     font-size: 1.2em;
     width: 75%;
+
+    background-color: transparent;
+}
+
+header > div > a {
+    background-color: transparent;
 }
 
 button {
@@ -192,28 +202,52 @@ li.dropdown {
     color: var(--primary-blue);
 }
 
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin: 0;
+    width: auto;
+
+    background-color: var(--dark-blue);
+}
+
+#search > form {
+    background-color: transparent;
+}
+
+#search > form > input {
+    border-radius: 50px;
+    
+    font-family: "myriad-bengali", sans-serif;
+    font-size: 0.9em;
+}
+
 .know {
     background-color: var(--secondary-blue);
 } 
 
 .container {
-    margin-left: 100px;
+    margin: 0;
 }
 
 .row {
+    display: flex;
     align-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
 }
 
-.info {
+#info {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-    margin: 50px 100px 50px 100px;
-    width: 100%;
+
+    padding: 50px;
 }
 
-.info > p {
+#info > p {
     text-align: center;
     font-size: 1.2em;
 }
@@ -267,6 +301,8 @@ footer {
 
 [class*="col"] {
     background-color: transparent;
-    padding: 2em;
+    
+    margin: 0;
+    padding: 0;
 }
 
