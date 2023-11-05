@@ -1,13 +1,34 @@
 console.log ("a ver si esto funciona")
 
 // PANTALLA DE CARGA
-function loading() {
-    "use strict";
-  
+document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
-        $("#carga").toggleClass("desaparecer");
-    }, 1000);
+        document.querySelector(".loading-screen").style.opacity = 0;
+        document.querySelector("header").style.display = "block";
+    }, 2000);
+});
 
-    console.log ("cargando")
+
+$(document).ready(function () {
+    "use strict";    
+
+    window.onload = function () {
+        "use strict";
+        loading();
+    };
+    
   
-}
+    $("#menu i").click(function () {
+  
+      $("#menu ul").css("left", "0vw");
+  
+    });
+  
+    $("#menu .option").click(function () {
+  
+      $("#menu ul").css("left", "-100vw");
+  
+    });
+  
+});
+  
