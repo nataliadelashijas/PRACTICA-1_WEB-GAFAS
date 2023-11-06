@@ -767,3 +767,70 @@ footer {
 .marca > .row > #info > a > button:hover {
     color: var(--primary-blue);   
 }
+
+/* MEDIA QUERIES */
+
+.popular > h2 {
+    font-size: 2em;
+}
+
+#galeria-producto {
+    position: relative;
+    top: 2em;
+    width: 100%;
+    align-items: baseline;
+}
+
+#galeria-producto > h2 {
+    position: relative;
+    font-size: 3em;
+}
+
+._flecha {
+    margin-top: 670px;
+    background-color: transparent;
+}
+
+._circulos {
+    background-color: transparent;
+}
+
+._galeria-producto {
+    width: 100%;
+}
+
+._compra {
+    background-color: transparent;
+    align-items: flex;
+}
+
+._detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    width: 100%;
+
+    background-color: transparent;
+}
+
+._detalles > h2 {
+    margin: 0;
+    padding: 0;
+}
+
+._detalles > p, ._detalles > a {
+    background-color: transparent;
+}
+
+._detalles > a {
+    font-size: 1em;
+    background-color: var(--dark-blue);
+    padding: 20px;
+}
+
+._detalles > a > button {
+    width: 100%;
+    height: auto;
+    color: white;
+}
