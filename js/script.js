@@ -29,6 +29,13 @@ $(document).ready(function () {
       $("#menu ul").css("left", "-100vw");
   
     });
+
+    $(".galeria-marcas #marca").click(function () {
+  
+      $(".marca").toggle();
+  
+    });
+  
   
 });
   

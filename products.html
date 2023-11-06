@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISMA | Tienda de gafas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <!-- CARGAR BOOTSTRAP DESDE CDN -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CARGA DE ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/jrc7fuv.css">
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a974f2cea3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <header id="products">
+
+    <div class="portada">
+        <h1>
+            GAFAS DE SOL
+        </h1>
+        <video autoplay muted loop id="video">
+            <source src="img/videoportada.mp4" type="video/mp4">
+        </video>
+    </div>
+        
+    <nav id="menu-products">
+      <i class="fa-solid fa-bars"></i>        
+      <ul>
+        <li><a href="index.html">PRISMA</a></li>
+        <li class="dropdown">
+          <a href="" class="dropbtn">SOL</a>
+          <div class="dropdown-content">
+            <a href="" class="option">RAY-BAN</a>
+            <a href="" class="option">PRADA</a>
+            <a href="" class="option">MÓ</a>
+            <a href="" class="option">HAWKERS</a>
+          </div>  
+        </li>
+        <li><a href="" class="option">VISTA</a></li>
+        <li><a href="" class="option">GRADUADAS</a></li>
+        
+        <div class="icons">
+          <li>
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+
+          <div id="search" class="container-fluid">
+            <form id="form" class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Busca tus gafas..." aria-label="Search">
+            </form>
+          </div>
+  
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i></i></a>
+          </li>
+  
+          <li>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </div>
+
+        <li>
+          <i class="fa-solid fa-xmark option"></i>
+        </li>
+      </ul>
+    </nav>
+  
+  </header>
+
+  <main>
+    <div class="popular">
+        <h2>MÁS POPULARES</h2>
+    </div>
+    <div class="galeria">
+        <div class="card">
+            <img src="img/DIOR_2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn btn-primary">DETALLES</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/GUESS_2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn btn-primary">DETALLES</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/KAPTEN-SON_1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn btn-primary">DETALLES</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/MO x SILBON_1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn btn-primary">DETALLES</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/VERSACE_1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn btn-primary">DETALLES</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/D.FRANKLIN_3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <a href="#" class="btn btn-primary">DETALLES</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="marcas">
+        <h2>MARCAS</h2>
+    </div>
+    <div class="galeria-marcas">
+        <div class="card">
+            <h2>RAY-BAN</h2>
+            <img src="img/RAY-BAN.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card" id="marca">
+            <h2>PRADA</h2>
+            <img src="img/PRADA.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card">
+            <h2>OAKLEY</h2>
+            <img src="img/OAKELY.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card">
+            <h2>HAWKERS</h2>
+            <img src="img/HAWKERS.jpg" class="card-img-top" alt="...">
+        </div>
+    </div>
+
+    <div class="marca">
+        <div class="row">
+            <div class="col-md-8">
+                <img src="img/ANUNCIO_PRADA.jpg" alt="">
+            </div>
+    
+            <div class="col-6 col-md-4" id="info">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, velit dicta consequuntur asperiores maxime odio aliquam id aperiam expedita impedit autem reprehenderit voluptas explicabo? Deleniti est suscipit aperiam doloremque repudiandae?</p>
+              <a href="">
+                <button>MÁS INFORMACIÓN</button>
+              </a>
+            </div>
+        </div>
+        <div class="galeria">
+            <div class="card">
+                <img src="img/DIOR_2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn btn-primary">DETALLES</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/GUESS_2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn btn-primary">DETALLES</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/KAPTEN-SON_1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn btn-primary">DETALLES</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="img/MO x SILBON_1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn btn-primary">DETALLES</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/VERSACE_1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn btn-primary">DETALLES</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/D.FRANKLIN_3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn btn-primary">DETALLES</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="rrss">
+      <a href="https://www.instagram.com/newyork_instagram/?hl=en" target="_blank">            
+          <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/nycgob" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DWXS0qyx76B7l" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <br>
+      <br>
+    </div>
+
+  </footer>
+  
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/script.js"></script>
+
+
+
+</body>
+
+  
+</html>
