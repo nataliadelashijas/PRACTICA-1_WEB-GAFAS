@@ -3,8 +3,8 @@ console.log ("a ver si esto funciona")
 // PANTALLA DE CARGA
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
-        document.querySelector(".loading-screen").style.opacity = 0;
-        document.querySelector("header").style.display = "block";
+        document.querySelector(".carga").style.display = "flex";
+        document.querySelector(".carga").style.display = "none";
     }, 2000);
 });
 
