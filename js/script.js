@@ -35,7 +35,19 @@ $(document).ready(function () {
       $(".marca").toggle();
   
     });
+    
+    $("#menu-products i").click(function () {
   
+      $("#menu-products ul").css("left", "0vw");
+  
+    });
+  
+    $("#menu-products .option").click(function () {
+  
+      $("#menu-products ul").css("left", "-100vw");
+  
+    });
+
   
 });
   

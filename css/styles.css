@@ -367,6 +367,8 @@ li.dropdown {
 }
 
 footer {
+    position: relative;
+    z-index: 1;
     height: 200px;
     background-color: var(--dark-blue);
     display: flex;
@@ -571,11 +573,12 @@ footer {
 }
 
 #video {
-    position: fixed;
+    position: absolute;
     right: 0;
     width: 100%;
     height: auto;
     top: -7em;
+    z-index: 0;
 }
 
 #menu-products > ul > li:first-child {
@@ -698,7 +701,7 @@ footer {
 .galeria-marcas {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     position: relative;
     z-index: 1;
@@ -769,7 +772,162 @@ footer {
 }
 
 /* MEDIA QUERIES */
+/* TABLET */
+@media screen and (max-width: 820px) {
 
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+    }
+
+    header > div:first-of-type {
+        width: 100%;
+        padding: 50px;
+    }
+
+    button {
+        font-size: 1.5em;
+    }
+
+    #menu-products {
+        height: 5em;
+        background-color: var(--dark-blue);
+    }
+
+    #menu-products > i {
+        display: flex;
+        justify-content: flex-start;
+        margin: 16px;
+        background: transparent;
+
+        position: relative;
+        top: 1em;
+    }
+
+    #menu-products > ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition-duration: 1s;
+        opacity: 0.9;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+      
+    #menu-products > ul > li:first-of-type {
+        display: none;
+    }
+
+    #menu-products > ul > li:last-child {
+        display: block;
+        position: absolute;
+        right: 1em;
+        top: 0.8em;
+        line-height: 0;
+        margin: 16px;
+    }
+
+    #menu-products > ul > li:last-child > i {
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    #menu-products > ul > li > a {
+        color: white;
+        font-size: 2em;
+    }
+
+    #video {
+        position: absolute;
+        height: 75vh;
+        width: auto;
+        top: -7em;
+    }
+
+    .popular {
+        z-index: 0;
+    }
+
+    .galeria {
+        z-index: 0;
+    }
+
+    .card {
+        width: 330px;
+        margin: 20px 20px;
+    }
+
+    .galeria-marcas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .marca > .row {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        height: 800px;
+    }
+
+    .marca > .row > #info {
+        padding: 20px;
+        right: 0;
+        background-color: var(--dark-blue);
+    }
+
+    .marca > .row > #info > p {
+        width: 75%;
+        margin: 0;
+    }
+
+    .marca > .row > #info > a > button {
+        height: 80px;
+    }
+
+    .marca > .row > div > img {
+        width: 100%;
+        left: 0; 
+    }
+}
+
+    
+
+
+/* MÓVIL */
+@media (max-width: 480px) {
+
+    .portada {
+        height: 40vh;
+    }
+
+    .portada > h1 {
+        padding: 140px 0 0 25px;    
+        font-size: 5em;    
+    }
+
+    #video {
+        height: 100%;
+    }
+    
+    #menu-products > ul > li > a {
+        font-size: 1.5em;
+    }
+
+    .marca > .row {
+        height: 700px;
+    }
+}
+
+/* PRODUCTO */
 .popular > h2 {
     font-size: 2em;
 }
