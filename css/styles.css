@@ -928,15 +928,12 @@ footer {
 }
 
 /* PRODUCTO */
-.popular > h2 {
-    font-size: 2em;
-}
 
 #galeria-producto {
     position: relative;
     top: 2em;
-    width: 100%;
     align-items: baseline;
+    width: 100%;
 }
 
 #galeria-producto > h2 {
@@ -945,7 +942,8 @@ footer {
 }
 
 ._flecha {
-    margin-top: 670px;
+    position: absolute;
+    top: 8em;
     background-color: transparent;
 }
 
@@ -953,13 +951,9 @@ footer {
     background-color: transparent;
 }
 
-._galeria-producto {
-    width: 100%;
-}
-
 ._compra {
     background-color: transparent;
-    align-items: flex;
+    align-items: flex-start;
 }
 
 ._detalles {
@@ -967,7 +961,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     padding: 50px;
-    width: 100%;
+    width: 50%;
 
     background-color: transparent;
 }
@@ -975,6 +969,19 @@ footer {
 ._detalles > h2 {
     margin: 0;
     padding: 0;
+}
+
+._detalles > i {
+    position: absolute;
+    background-color: transparent;
+    font-size: 2em;
+    color: var(--dark-blue);
+    align-self: flex-end;
+}
+
+._detalles > h2:nth-of-type(2) {
+    color: var(--primary-blue);
+    font-size: 2em;
 }
 
 ._detalles > p, ._detalles > a {
@@ -985,10 +992,34 @@ footer {
     font-size: 1em;
     background-color: var(--dark-blue);
     padding: 20px;
+    position: absolute;
+    bottom: 0;
+    margin: 40px;
+    width: 25%;
+}
+
+._detalles > a:hover {
+    background-color: var(--primary-blue);
 }
 
 ._detalles > a > button {
     width: 100%;
     height: auto;
     color: white;
+}
+
+.popular > h2 {
+    font-size: 2em;
+}
+
+.galeria-like {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galeria-like > .card {
+    width: 500px;
+    margin: 20px 30px;
 }
