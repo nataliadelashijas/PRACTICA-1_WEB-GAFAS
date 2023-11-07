@@ -678,6 +678,7 @@ footer {
 .card > div > h5 {
     font-family: "gyst-variable",sans-serif;
     color: var(--dark-blue);
+    align-self: flex-start;
 }
 
 .card > div > a {
@@ -685,6 +686,8 @@ footer {
     color: white;
     background-color: var(--dark-blue);
     border: none;
+    padding: 20px;
+    width: 100%1;
 }
 
 .card > div > a:hover {
@@ -942,8 +945,7 @@ footer {
 }
 
 ._flecha {
-    position: absolute;
-    top: 8em;
+    position: fixed;
     background-color: transparent;
 }
 
@@ -961,7 +963,6 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     padding: 50px;
-    width: 50%;
 
     background-color: transparent;
 }
@@ -994,8 +995,6 @@ footer {
     padding: 20px;
     position: absolute;
     bottom: 0;
-    margin: 40px;
-    width: 25%;
 }
 
 ._detalles > a:hover {
@@ -1023,3 +1022,57 @@ footer {
     width: 500px;
     margin: 20px 30px;
 }
+
+/* MEDIA QUERIES */
+/* TABLET */
+@media screen and (max-width: 820px) {
+
+    #product {
+        height: 75vh;
+    }
+
+    #galeria-producto > h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    ._detalles {
+        width: 100%;
+    }
+
+    .popular {
+        margin-top: 60px;
+    }
+
+    ._circulos {
+        z-index: 1;
+    }
+    
+}
+
+/* MÓVIL */
+@media (max-width: 480px) {
+
+    #product {
+        height: 60vh;
+    }
+
+    #galeria-producto {
+        top: 0;
+    }
+
+    #galeria-producto > h2 {
+        font-size: 2em;
+        margin: 20px 0;
+    }
+
+    ._detalles {
+        padding: 25px;
+    }
+
+    ._detalles > a {
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
